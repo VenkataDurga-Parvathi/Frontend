@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vowel Counter</title>
+</head>
+<body>
+    <script>
+        const countVowels = (str) => {
+            const vowels = ['a', 'e', 'i', 'o', 'u'];
+            let count = 0;
+            for (let char of str.toLowerCase()) {
+                if (vowels.includes(char)) {
+                    count++;
+                }
+            }
+            return count;
+        };
+        const input = "Hello from Tadepalligudem!";
+        console.log("Vowels count:", countVowels(input));
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let companies = ["Bollmberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
+        console.log(companies.shift()); //remove 1st element
+        let index=companies.indexOf("Uber");
+        if (index!==-1) {
+            companies[index] = "Ola";
+        }
+        companies.push("Amazon");
+        console.log(companies);
+
+    </script>
+</body>
+</html>

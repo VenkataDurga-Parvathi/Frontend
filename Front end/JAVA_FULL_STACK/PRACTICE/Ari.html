@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arithmetic Operations</title>
+  <style>
+    body {
+      background-color: cadetblue;
+      transition: background-color 0.3s ease;
+    }
+    input, button {
+      margin: 4px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Choose an Operation</h1>
+  <label>First Number:</label>
+  <input type="text" id="first"><br>
+  <label>Second Number:</label>
+  <input type="text" id="second"><br><br>
+  <button onclick="calculate('add')">Addition</button>
+  <button onclick="calculate('sub')">Subtraction</button>
+  <button onclick="calculate('mul')">Multiplication</button>
+  <button onclick="calculate('mod')">Modulus</button>
+  <p id="result"></p>
+  <script>
+    function calculate(operation) {
+      const a = parseFloat(document.getElementById('first').value);
+      const b = parseFloat(document.getElementById('second').value);
+      const resultDisplay = document.getElementById("result");
+      if (isNaN(a) || isNaN(b)) {
+        alert("Please enter valid numbers.");
+        return;
+      }
+      let result;
+      let bgColor;
+      switch(operation) {
+        case 'add':
+          result = a + b;
+          bgColor = 'lightgreen';
+          resultDisplay.innerHTML = `Addition Result: ${result}`;
+          break;
+        case 'sub':
+          result = a - b;
+          bgColor = 'lightblue';
+          resultDisplay.innerHTML = `Subtraction Result: ${result}`;
+          break;
+        case 'mul':
+          result = a * b;
+          bgColor = 'lightsalmon';
+          resultDisplay.innerHTML = `Multiplication Result: ${result}`;
+          break;
+        case 'mod':
+          result = a % b;
+          bgColor = 'lightcoral';
+          resultDisplay.innerHTML = `Modulus Result: ${result}`;
+          break;
+      }
+      document.body.style.backgroundColor = bgColor;
+    }
+  </script>
+
+</body>
+</html>

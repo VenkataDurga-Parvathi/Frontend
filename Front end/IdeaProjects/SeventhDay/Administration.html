@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sri Vasavi</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <style>
+    /* Make all carousel images uniform */
+    .carousel-inner img {
+      height: 450px;
+      object-fit: cover;
+    }
+    .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Sri Vasavi</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Student List</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">
+              Account
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Login</a></li>
+              <li><a class="dropdown-item" href="#">Register</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://srivasaviengg.ac.in/images/placement/20%20x%2010%20Vasavi%20Madhu.JPG" class="d-block w-100" alt="Slide 1">
+      </div>
+      <div class="carousel-item">
+        <img src="https://srivasaviengg.ac.in/images/placement/12%20x%206%20%20Vasavi%20madhu%2001.JPG" class="d-block w-100" alt="Slide 2">
+      </div>
+      <div class="carousel-item">
+        <img src="https://srivasaviengg.ac.in/images/placement/12%20x%206%20%20Vasavi%20Madhu%2002.JPG" class="d-block w-100" alt="Slide 3">
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <main>
+    <div class="container my-5">
+  <h3 class="text-center mb-4">Management Team</h3>
+  <div class="row justify-content-center">
+
+    <div class="col-md-3">
+      <div class="card">
+        <img src="https://srivasaviengg.ac.in/images/admin/principal.jpg" class="card-img-top" alt="Principal">
+        <div class="card-body">
+          <h5 class="card-title">Principal</h5>
+          <p class="card-text">Dr. Guduru VNSR Ratnakara Rao , leading the institution with a vision for excellence.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <img src="https://srivasaviengg.ac.in/images/admin/naresh.jpeg" class="card-img-top" alt="Dean">
+        <div class="card-body">
+          <h5 class="card-title">Dean</h5>
+          <p class="card-text">Dr.V.S.Naresh, Dean(R&D).</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card">
+        <img src="https://srivasaviengg.ac.in/images/placement/GK%20Placements.jpg" class="card-img-top" alt="Coordinator">
+        <div class="card-body">
+          <h5 class="card-title">Placement Coordinator</h5>
+          <p class="card-text">Dr. P N V Gopala Krishna, connecting students with career opportunities.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <img src="https://srivasaviengg.ac.in/images/departments/cse/cse_hod1.jpeg" class="card-img-top" alt="Director">
+        <div class="card-body">
+          <h5 class="card-title">Professor & Head of the Department CSE</h5>
+          <p class="card-text">Dr. D.Jaya Kumari</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </main>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

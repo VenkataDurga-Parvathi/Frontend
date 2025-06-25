@@ -1,0 +1,5 @@
+560,suma,20,cse
+540,shar,19,cs
+111,amus,21,cs
+233,qwer,13,cse
+876,paru,16,ds
